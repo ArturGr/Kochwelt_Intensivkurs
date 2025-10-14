@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('./font/Raleway_REGULAR.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+*, html {
+    scroll-behavior: smooth !important;
+}
 body{
     margin: 0;
+}
+
+
+/* === TABLET STYLES (width: 768px - 1280px) === */
+@media (max-width: 1280.9px) {
+}
+
+/* === MOBILE STYLES (width to 767px) === */
+@media (max-width: 767.9px) {
 }
