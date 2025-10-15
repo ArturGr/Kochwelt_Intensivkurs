@@ -1,3 +1,5 @@
+/* Style for Modul 6 - Gruppenarbeit Kochwelt */
+
 /* Font-Face */
 /* FontFamily: Raleway */
 @font-face {
@@ -12,6 +14,7 @@
     --black: #000000;
     --white: #ffffff;
     --green: #008001;
+    --green-darker: #015d02;
     --grey-light: #efefef;
     --grey-darker: #403b3b;
 }
@@ -41,6 +44,11 @@ a{
     -webkit-transition: all .125s ease-out;
     transition: all .125s ease-out;
 }
+img{
+    width: 100%;
+    max-width:45rem;
+    border-radius: 1rem;
+}
 body{
     margin: 0 auto;
 }
@@ -58,74 +66,143 @@ div.wrapper{
     max-width:1440px;
     width: 100%;
 }
+div.inner{
+    padding: 0 3rem;
+}
+.content{
+    display: flex;
+    width: 100%;
+}
 section{
     display: flex;
-    padding: 7.5em 0;
+    padding: 3rem 0;
+}
+strong{
+    font-weight: bold;
+}
+.d-none{
+    display:none;
 }
 /* Headlines */
+h1,h2{
+    font-weight: bold;
+}
 h1{
-    font-size: 2.25em;
-    font-weight:bold;
+    font-size: 3.5em;
+    margin-bottom: 2rem;
 }
 h2{
-    font-size: 1.5em;
-    font-weight:bold;
+    font-size: 2.5em;
+    margin-bottom: 1rem;
 }
-h3{
-    font-size: 1.125em;
-    font-weight:bold;
+
+/* burger-menu */
+#burgerMenu{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    .stroke{
+        justify-content: center;
+        display: flex;
+        width: 80%;
+        height: 0.25rem;
+        background-color: var(--black);
+    }
 }
 
 /* Header */
 header{
-    height: 8rem;
+    height: 7rem;
     box-shadow: 0px 2px 5px 0px rgb(0 0 0/ 0.1);
     div.wrapper{
-        justify-content: space-between;
-        align-items: end;
-
-        nav ul{
+        div.inner{
+            width: 100%;
             display: flex;
-            li{
+            justify-content: space-between;
+            align-items: end;
+        }
+
+        #logo{
+            img{
+                max-width: 20rem;
+            };
+        }
+
+        nav{
+            #mainMenu{
                 display: flex;
-                align-items: end;
-                padding: 1rem 2rem;
-                &.active{
-                    border-bottom: 2px solid var(--green);
-                    a{
-                        color: var(--green);
-                        font-weight: bold;
+                li{
+                    padding: 1rem 2rem;
+                    &.active{
+                        border-bottom: 2px solid var(--green);
+                        a{
+                            color: var(--green);
+                            font-weight: bold;
+                        }
+                    }
+                    &:hover{
+                        border-bottom: 2px solid var(--green);
+                        a{
+                            color: var(--green);
+                            font-weight: bold;
+                        }
                     }
                 }
-                &:hover{
-                    border-bottom: 2px solid var(--green);
-                    a{
-                        color: var(--green);
-                        font-weight: bold;
-                    }
-                }
+            }
+            #burgerMenu{
+                display:none;
             }
         }
     }
 }
 
 /* Sections */
+#randomDish{
+    .content{
+        gap: 2rem;
+        align-items: center;
+        img{
+            max-width: 50%;
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            a{
+                text-align: center;
+                padding: 1rem 2rem;
+                border:0;
+                color: var(--white);
+                background-color: var(--green);
+                &:hover{
+                    background-color: var(--green-darker);
+                }
+            }
+        }
+    }
+}
 
 #news{
     background-color: var(--grey-light);
-    div.wrapper{
-        flex-direction: column;
-        align-items: center;
+    h2{
+        text-align: center;
     }
-    #dishes{
-        width: 100%;
+    .content{
         gap: 2rem;
-        display: flex;
         figure{
             width: 100%;
             display: block;
             img{
                 width: 100%;
+            }
+            figcaption{
+                text-align: center;
+                font-weight: bold;
+                margin-top: 0.5rem;
             }
         }
 
@@ -133,7 +210,38 @@ header{
 }
 
 footer{
+    padding: 1.5rem 0;
     background-color: var(--grey-darker);
+    .inner{
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    #logoFooter{
+        img{
+            max-width: 5rem;
+            /*  */
+            filter: brightness(0) invert(1);
+        }
+    }
+    #navFooter{
+        ul{
+            display: flex;
+            li{
+                padding: 0 1rem;
+                a{
+                    color: var(--white);
+                    &:hover{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Unterseiten */
@@ -147,12 +255,14 @@ footer{
 
 /* Rezept Artur */
 #rezeptAg{
+}
 
-    section{
-        a{
-            asdasdasd
-        }
-    }
+/* Rezept Nadine */
+#rezeptNb{
+}
+
+/* Rezept Volker */
+#rezeptVd{
 }
 
 /* Rezept Nadine */
@@ -225,16 +335,65 @@ tbody td:first-child {
 /*** MEDIA QUERIES ***/
 /* calculated with em (base 16px) */
 /* Large devices (tablets, 768px - 1280px) */
-@media only screen and (min-width: 48.01em) and (max-width: 80em){
+@media only screen and (min-width: 48.01rem) and (max-width: 80rem){
 
 }
 
 /* Medium devices (mobile, 768px and down) */
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 62.5rem) {
+    /* Header */
+    header{
+        div.wrapper{
+            div.inner{
+                align-items: center;
+            }
+            nav{
+                #mainMenu{
+                    display: none;
+                    &.show{
+                        position: absolute;
+                        right: 6rem;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: var(--grey-light);
+                        li{
+                            border: 0 !important;
+                            &.active{
+                                background-color: var(--grey-light);
+                            }
+                        }
+                        &:after{
+                            content:"";
+                            position: absolute;
+                            right: -0.25rem;
+                            top: 1rem;
+                            height: 1rem;
+                            width:1rem;
+                            background-color: var(--grey-light);
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+                #burgerMenu{
+                    display: flex;
+                }
+            }
+        }
+    }
+    /* Sections */
+    section{
+        .content{
+            flex-direction: column;
+        }
+    }
+}
+
+/* Medium devices (mobile, 768px and down) */
+@media only screen and (max-width: 48rem) {
 
 }
 
 /* Small devices (mobile, 400px and down) */
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 25rem) {
 
 }
