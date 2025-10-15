@@ -63,6 +63,9 @@ div.wrapper{
 }
 div.inner{
     padding: 0 3rem;
+}
+.content{
+    display: flex;
     width: 100%;
 }
 section{
@@ -76,17 +79,16 @@ strong{
     display:none;
 }
 /* Headlines */
+h1,h2{
+    font-weight: bold;
+}
 h1{
     font-size: 3.5em;
-    font-weight: bold;
+    margin-bottom: 2rem;
 }
 h2{
     font-size: 2.5em;
-    font-weight: bold;
-}
-h3{
-    font-size: 3.5em;
-    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 /* burger-menu */
@@ -154,31 +156,25 @@ header{
 }
 
 /* Sections */
-
 #randomDish{
-    div.wrapper{
-        flex-direction: row;
-        #dish{
+    .content{
+        gap: 2rem;
+        align-items: center;
+        img{
+            max-width: 50%;
+        }
+        article{
             display: flex;
+            flex-direction: column;
             gap: 2rem;
-            align-items: center;
-            img{
-
-            }
-            article{
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                a{
-                    text-align: center;
-                    padding: 1rem 2rem;
-                    width: 100%;
-                    border:0;
-                    color: var(--white);
-                    background-color: var(--green);
-                    &:hover{
-                        background-color: var(--green-darker);
-                    }
+            a{
+                text-align: center;
+                padding: 1rem 2rem;
+                border:0;
+                color: var(--white);
+                background-color: var(--green);
+                &:hover{
+                    background-color: var(--green-darker);
                 }
             }
         }
@@ -187,15 +183,21 @@ header{
 
 #news{
     background-color: var(--grey-light);
-    #dishes{
-        width: 100%;
+    h2{
+        text-align: center;
+    }
+    .content{
         gap: 2rem;
-        display: flex;
         figure{
             width: 100%;
             display: block;
             img{
                 width: 100%;
+            }
+            figcaption{
+                text-align: center;
+                font-weight: bold;
+                margin-top: 0.5rem;
             }
         }
 
@@ -203,7 +205,38 @@ header{
 }
 
 footer{
+    padding: 1.5rem 0;
     background-color: var(--grey-darker);
+    .inner{
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    #logoFooter{
+        img{
+            max-width: 5rem;
+            /*  */
+            filter: brightness(0) invert(1);
+        }
+    }
+    #navFooter{
+        ul{
+            display: flex;
+            li{
+                padding: 0 1rem;
+                a{
+                    color: var(--white);
+                    &:hover{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Unterseiten */
@@ -236,6 +269,7 @@ footer{
 
 /* Medium devices (mobile, 768px and down) */
 @media only screen and (max-width: 62.5rem) {
+    /* Header */
     header{
         div.wrapper{
             div.inner{
@@ -272,6 +306,12 @@ footer{
                     display: flex;
                 }
             }
+        }
+    }
+    /* Sections */
+    section{
+        .content{
+            flex-direction: column;
         }
     }
 }
