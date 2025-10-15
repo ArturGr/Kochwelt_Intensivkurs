@@ -1,16 +1,117 @@
+/* Font-Face */
+/* FontFamily: Raleway */
 @font-face {
     font-family: 'Raleway';
-    src: url('./font/Raleway_REGULAR.ttf');
+    src: url('./fonts/Raleway-Regular.woff2') format('woff2'), url('./fonts/Raleway-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-*, html {
-    scroll-behavior: smooth !important;
-}
-body{
-    margin: 0;
+
+/* Color Variables */
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --green: #008001;
+    --grey-light: #efefef;
+    --grey-darker: #403b3b;
 }
 
+/* General Styling */
+*{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size:16px;
+}
+html{
+    scroll-behavior: smooth;
+    background: var(--white);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+body{
+    margin: 0 auto;
+}
+header, section, footer{
+    display: flex;
+    justify-content: center;
+}
+div.wrapper{
+    display: flex;
+    max-width:1440px;
+    width: 100%;
+}
+section{
+    padding: 7.5em 0;
+}
+/* Headlines */
+h1{
+    font-size: 6em;
+    font-weight:bold;
+}
+h2{
+    font-size: 5em;
+    font-weight:bold;
+}
+h3{
+    font-size: 3.5em;
+    font-weight:bold;
+}
+
+/* Header */
+header{
+    height: 8rem;
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0/ 0.1);
+    div.wrapper{
+        justify-content: space-between;
+        align-items: end;
+
+        nav ul{
+            display: flex;
+            li{
+                display: flex;
+                align-items: end;
+                padding: 1rem 2rem;
+                &.active{
+                    border-bottom: 2px solid var(--green);
+                    a{
+                        color: var(--green);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Sections */
+section{
+    #randomDish{
+
+    }
+    #news{
+        div.wrapper{
+            display: flex;
+            
+        }
+    }
+}
+
+#dishes{
+    display: flex;
+}
+
+footer{
+    background-color: var(--grey-darker);
+}
 
 /* === TABLET STYLES (width: 768px - 1280px) === */
 @media (max-width: 1280.9px) {
