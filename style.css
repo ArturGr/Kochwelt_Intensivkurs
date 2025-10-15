@@ -48,6 +48,11 @@ header, section, footer{
     display: flex;
     justify-content: center;
 }
+
+header, section {
+    margin: 0px 160px 0px 160px;
+}
+
 div.wrapper{
     display: flex;
     max-width:1440px;
