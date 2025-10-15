@@ -97,7 +97,6 @@ section{
     #news{
         div.wrapper{
             display: flex;
-            
         }
     }
 }
@@ -108,6 +107,7 @@ section{
 
 footer{
     background-color: var(--grey-darker);
+
 }
 
 /* === TABLET STYLES (width: 768px - 1280px) === */
