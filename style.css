@@ -320,12 +320,21 @@ footer{
     border: none;
 }
 
-table {
-    
+tbody {
+    display: block;
+    height: 250px;
+    width: 100%;
+    overflow: auto;
+}
+.use_for {
+    font-weight: bold;
 }
 
+
+
 tbody td:first-child {
-    width: 50px;
+    width: 30px;
+    text-align: center;
 }
 
 
