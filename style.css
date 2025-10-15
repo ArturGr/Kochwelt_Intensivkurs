@@ -193,6 +193,7 @@ footer{
 
 .incredients {
     justify-content: start;
+    flex-direction: column;
 }
 
 #amount {
@@ -211,6 +212,16 @@ footer{
     color: #ffffff;
     border: none;
 }
+
+table {
+    
+}
+
+tbody td:first-child {
+    width: 50px;
+}
+
+
 /*** MEDIA QUERIES ***/
 /* calculated with em (base 16px) */
 /* Large devices (tablets, 768px - 1280px) */
