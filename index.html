@@ -5,55 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt - Start</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="../img/logo_small.png">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./img/logo_small.png">
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <div id="logo">
-                <a href="index.html"><img src="img/logo.png" alt="Kochwelt Logo TEST"></a>
+            <div class="inner">
+                <div id="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="Kochwelt Logo TEST"></a>
+                </div>
+                <nav>
+                    <ul id="mainMenu">
+                        <li class="active"><a href="index.html">Start</a></li>
+                        <li><a href="#">Rezept des Tages</a></li>
+                        <li><a href="./unterseiten/kontakt.html">Kontakt</a></li>
+                        <li><a href="./unterseiten/impressum.html">Impressum</a></li>
+                    </ul>
+                    <!-- Burger Menu (hidden default) - toggled with JS (toggleMenu) -->
+                    <button id="burgerMenu" type="button" aria-label="Menü einblenden">
+                        <div class="stroke"></div>
+                        <div class="stroke"></div>
+                        <div class="stroke"></div>
+                    </button>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li class="active"><a href="index.html">Start</a></li>
-                    <li><a href="#">Rezept des Tages</a></li>
-                    <li><a href="./unterseiten/kontakt.html">Kontakt</a></li>
-                    <li><a href="./unterseiten/impressum.html">Impressum</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
     <section id="randomDish">
         <div class="wrapper">
-            <img src="./img/salad.jpg" alt="Test"/>
-            <article>
-                <h2>Französische Croissants</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste itaque enim non, in dignissimos impedit, corrupti dolores debitis quis dolore accusantium, ipsam totam voluptatibus ut facere pariatur aliquid velit odio?</p>
-            </article>
+            <div class="inner">
+                <div id="dish">
+                    <img src="./img/salad.jpg" alt="Test"/>
+                    <article>
+                        <h2>Französische Croissants</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste itaque enim non, in dignissimos impedit, corrupti dolores debitis quis dolore accusantium, ipsam totam voluptatibus ut facere pariatur aliquid velit odio?</p>
+                        <a href="">Rezept öffnen</button>
+                    </article>
+                </div>
+            </div>
         </div>
     </section>
     <section id="news">
         <div class="wrapper">
-            <h2>Lust auf was Neues?</h2>
-            <div id="dishes">
-                <figure>
-                    <img src="./img/salad.jpg" alt="Test"/>
-                    <figcaption>Rezept 1</figcaption>
-                </figure>
-                <figure>
-                    <img src="./img/salad.jpg" alt="Test"/>
-                    <figcaption>Rezept 1</figcaption>
-                </figure>
-                <figure>
-                    <img src="./img/salad.jpg" alt="Test"/>
-                    <figcaption>Rezept 1</figcaption>
-                </figure>
+            <div class="inner">
+                <h2>Lust auf was Neues?</h2>
+                <div id="dishes">
+                    <a href="./unterseiten/kochrezeptAG.html" alt="Rezept 1">
+                        <figure>
+                            <img src="./img/salad.jpg" alt="Test"/>
+                            <figcaption>Rezept 1</figcaption>
+                        </figure>
+                    </a>
+                    <a href="./unterseiten/kochrezeptNB.html" alt="Rezept 2">
+                        <figure>
+                            <img src="./img/salad.jpg" alt="Test"/>
+                            <figcaption>Rezept 1</figcaption>
+                        </figure>
+                    </a>
+                    <a href="./unterseiten/kochrezeptVD.html" alt="Rezept 3"></a>
+                        <figure>
+                            <img src="./img/salad.jpg" alt="Test"/>
+                            <figcaption>Rezept 1</figcaption>
+                        </figure>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
     <section id="randomArtcile">
         <div class="wrapper">
-            <div class="">
+            <div class="inner">
                 <h2>Pfanne vs. Wok - Was ist besser?</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste itaque enim non, in dignissimos impedit, corrupti dolores debitis quis dolore accusantium, ipsam totam voluptatibus ut facere pariatur aliquid velit odio?</p>
                 <img src="./img/salad.jpg" alt="Test"/>
@@ -62,6 +84,18 @@
     </section>
     <footer>
         <div class="wrapper">
+            <div class="inner">
+                <div id="logoFooter">
+                    <a href="index.html"><img src="./img/logo_small.png" alt="Kochwelt Logo klein"/></a>
+                </div>
+                <nav id="navFooter">
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </footer>
 </body>
