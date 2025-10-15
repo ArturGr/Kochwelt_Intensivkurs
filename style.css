@@ -156,6 +156,7 @@ footer{
 }
 
 /* Rezept Nadine */
+/* Section Recipeimage */
 .recipeimage {
     flex-direction: column;
 }
@@ -186,6 +187,29 @@ footer{
 .recipeinformation img {
     height: 16px;
     width: 16px;
+}
+
+/* Section Incredients */
+
+.incredients {
+    justify-content: start;
+}
+
+#amount {
+    height: 32px;
+    width: 100px;
+    text-align: center;
+    margin-left: 8px;
+    border-color: rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+}
+
+.incredients button {
+    height: 36px;
+    width: 110px;
+    background-color: #008001;
+    color: #ffffff;
+    border: none;
 }
 /*** MEDIA QUERIES ***/
 /* calculated with em (base 16px) */
