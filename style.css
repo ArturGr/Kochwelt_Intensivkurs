@@ -150,6 +150,21 @@ footer{
     }
 }
 
+/* Rezept Nadine */
+.recipeimage {
+    flex-direction: column;
+}
+
+.recipeimage img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    object-position: center;
+}
+
+
+
 /*** MEDIA QUERIES ***/
 /* calculated with em (base 16px) */
 /* Large devices (tablets, 768px - 1280px) */
