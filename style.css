@@ -10,7 +10,7 @@
 }
 
 /* Color Variables */
-:root{
+:root {
     --black: #000000;
     --white: #ffffff;
     --green: #008001;
@@ -20,23 +20,26 @@
 }
 
 /* General Styling */
-*{
+* {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     margin: 0;
     padding: 0;
-    font-size:16px;
+    font-size: 16px;
 }
-html{
+
+html {
     scroll-behavior: smooth;
     background: var(--white);
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--black);
 
@@ -44,15 +47,20 @@ a{
     -webkit-transition: all .125s ease-out;
     transition: all .125s ease-out;
 }
-img{
+
+img {
     width: 100%;
-    max-width:45rem;
+    max-width: 45rem;
     border-radius: 1rem;
 }
-body{
+
+body {
     margin: 0 auto;
 }
-header, section, footer{
+
+header,
+section,
+footer {
     display: flex;
     justify-content: center;
 }
@@ -61,39 +69,47 @@ main{
 }
 div.wrapper{
     display: flex;
-    max-width:1440px;
+    max-width: 1440px;
     width: 100%;
     padding: 0 3rem;
 }
-.content{
+
+.content {
     display: flex;
     width: 100%;
 }
-section{
+
+section {
     display: flex;
     padding: 3rem 0;
 }
-strong{
+
+strong {
     font-weight: bold;
 }
-.d-none{
-    display:none;
+
+.d-none {
+    display: none;
 }
+
 /* Headlines */
-h1,h2{
+h1,
+h2 {
     font-weight: bold;
 }
-h1{
+
+h1 {
     font-size: 2.25em;
     margin-bottom: 2rem;
 }
-h2{
+
+h2 {
     font-size: 1.5em;
     margin-bottom: 1rem;
 }
 
 /* burger-menu */
-#burgerMenu{
+#burgerMenu {
     width: 2.5rem;
     height: 2.5rem;
     display: flex;
@@ -101,7 +117,8 @@ h2{
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
-    .stroke{
+
+    .stroke {
         justify-content: center;
         display: flex;
         width: 80%;
@@ -111,7 +128,7 @@ h2{
 }
 
 /* Header */
-header{
+header {
     height: 7rem;
     box-shadow: 0px 2px 5px 0px rgb(0 0 0/ 0.1);
     div.wrapper{
@@ -120,59 +137,71 @@ header{
         justify-content: space-between;
         align-items: end;
 
-        #logo{
-            img{
+        #logo {
+            img {
                 max-width: 20rem;
-            };
+            }
+
+            ;
         }
 
-        nav{
-            #mainMenu{
+        nav {
+            #mainMenu {
                 display: flex;
-                li{
+
+                li {
                     padding: 1rem 2rem;
-                    &.active{
+
+                    &.active {
                         border-bottom: 2px solid var(--green);
-                        a{
+
+                        a {
                             color: var(--green);
                             font-weight: bold;
                         }
                     }
-                    &:hover{
+
+                    &:hover {
                         border-bottom: 2px solid var(--green);
-                        a{
+
+                        a {
                             color: var(--green);
                             font-weight: bold;
                         }
                     }
                 }
             }
-            #burgerMenu{
-                display:none;
+
+            #burgerMenu {
+                display: none;
             }
         }
     }
 }
 
 /* Sections */
-#randomDish{
-    .content{
+#randomDish {
+    .content {
         gap: 2rem;
         align-items: center;
-        img{
+
+        img {
             max-width: 50%;
         }
-        article{
+
+        article {
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            a{
+
+            a {
                 text-align: center;
                 padding: 1rem 2rem;
-                border:0;
+                border: 0;
                 color: var(--white);
                 background-color: var(--green);
-                &:hover{
+
+                &:hover {
                     background-color: var(--green-darker);
                 }
             }
@@ -180,9 +209,10 @@ header{
     }
 }
 
-#news{
+#news {
     background-color: var(--grey-light);
-    h2{
+
+    h2 {
         text-align: center;
     }
     .content{
@@ -194,10 +224,12 @@ header{
         figure{
             width: 100%;
             display: block;
-            img{
+
+            img {
                 width: 100%;
             }
-            figcaption{
+
+            figcaption {
                 text-align: center;
                 font-weight: bold;
                 margin-top: 0.5rem;
@@ -232,21 +264,26 @@ footer{
         align-items: center;
         width: 100%;
     }
-    #logoFooter{
-        img{
+
+    #logoFooter {
+        img {
             max-width: 5rem;
             /*  */
             filter: brightness(0) invert(1);
         }
     }
-    #navFooter{
-        ul{
+
+    #navFooter {
+        ul {
             display: flex;
-            li{
+
+            li {
                 padding: 0 1rem;
-                a{
+
+                a {
                     color: var(--white);
-                    &:hover{
+
+                    &:hover {
                         font-weight: bold;
                     }
                 }
@@ -258,22 +295,10 @@ footer{
 /* Unterseiten */
 
 /* Impressum */
-#impressum{
-    div.wrapper{
+#impressum {
+    div.wrapper {
         flex-direction: column;
     }
-}
-
-/* Rezept Artur */
-#rezeptAg{
-}
-
-/* Rezept Nadine */
-#rezeptNb{
-}
-
-/* Rezept Volker */
-#rezeptVd{
 }
 
 /* Rezept Nadine */
@@ -334,24 +359,46 @@ footer{
     border: none;
 }
 
-table {
-    
+tbody {
+    display: block;
+    height: 250px;
+    width: 100%;
+    overflow: auto;
+}
+
+.use_for {
+    font-weight: bold;
 }
 
 tbody td:first-child {
-    width: 50px;
+    width: 30px;
+    text-align: center;
 }
 
+/* Section Preperation */
+
+.preperation {
+    flex-direction: column;
+}
+
+.preperation_time {
+    display: flex;
+    gap: 24px;
+}
+
+.preperation img {
+    height: 16px;
+    width: 16px;
+}
 
 /*** MEDIA QUERIES ***/
 /* calculated with em (base 16px) */
 /* Large devices (tablets, 768px - 1280px) */
-@media only screen and (min-width: 48.01rem) and (max-width: 80rem){
-
-}
+@media only screen and (min-width: 48.01rem) and (max-width: 80rem) {}
 
 /* Medium devices (mobile, 768px and down) */
 @media only screen and (max-width: 62.5rem) {
+
     /* Header */
     header{
         div.wrapper{
@@ -359,39 +406,45 @@ tbody td:first-child {
             nav{
                 #mainMenu{
                     display: none;
-                    &.show{
+
+                    &.show {
                         position: absolute;
                         right: 6rem;
                         display: flex;
                         flex-direction: column;
                         background-color: var(--grey-light);
-                        li{
+
+                        li {
                             border: 0 !important;
-                            &.active{
+
+                            &.active {
                                 background-color: var(--grey-light);
                             }
                         }
-                        &:after{
-                            content:"";
+
+                        &:after {
+                            content: "";
                             position: absolute;
                             right: -0.25rem;
                             top: 1rem;
                             height: 1rem;
-                            width:1rem;
+                            width: 1rem;
                             background-color: var(--grey-light);
                             transform: rotate(45deg);
                         }
                     }
                 }
-                #burgerMenu{
+
+                #burgerMenu {
                     display: flex;
                 }
             }
         }
     }
+
     /* Sections */
-    section{
-        .content{
+    section {
+        .content {
             flex-direction: column;
             img{
                 max-width: 100%;
@@ -414,7 +467,6 @@ tbody td:first-child {
             }
         }
     }
-
 }
 
 /* Medium devices (mobile, 768px and down) */
@@ -434,6 +486,4 @@ tbody td:first-child {
 }
 
 /* Small devices (mobile, 400px and down) */
-@media only screen and (max-width: 25rem) {
-
-}
+@media only screen and (max-width: 25rem) {}

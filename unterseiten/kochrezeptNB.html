@@ -11,17 +11,25 @@
 <body>
     <header>
         <div class="wrapper">
-            <div id="logo">
-                <a href="index.html"><img src="../img/logo.png" alt="Kochwelt Logo TEST"></a>
+            <div class="inner">
+                <div id="logo">
+                    <a href="index.html"><img src="../img/logo.png" alt="Kochwelt Logo TEST"></a>
+                </div>
+                <nav>
+                    <ul id="mainMenu">
+                        <li class="active"><a href="index.html">Start</a></li>
+                        <li><a href="#">Rezept des Tages</a></li>
+                        <li><a href="./unterseiten/kontakt.html">Kontakt</a></li>
+                        <li><a href="./unterseiten/impressum.html">Impressum</a></li>
+                    </ul>
+                    <!-- Burger Menu (hidden default) - toggled with JS (toggleMenu) -->
+                    <button id="burgerMenu" type="button" aria-label="Menü einblenden">
+                        <div class="stroke"></div>
+                        <div class="stroke"></div>
+                        <div class="stroke"></div>
+                    </button>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li class="active"><a href="index.html">Start</a></li>
-                    <li><a href="#">Rezept des Tages</a></li>
-                    <li><a href="./unterseiten/kontakt.html">Kontakt</a></li>
-                    <li><a href="./unterseiten/impressum.html">Impressum</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
     <section class="recipeimage">
@@ -50,7 +58,10 @@
         </form>
         <table>
             <tbody>
-                <th>Für die Rouladen</th>
+                <tr>
+                    <td></td>
+                    <td class="use_for">Für die Rouladen</td>
+                </tr>
                 <tr>
                     <td>2</td>
                     <td>Scheiben Rinderrouladen</td>
@@ -83,8 +94,12 @@
                     <td></td>
                     <td>Küchengarn</td>
                 </tr>
-                <br>
-                <th>Für die Soße</th>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td></td>
+                    <td class="use_for">Für die Soße</td>
+                </tr>
                 <tr>
                     <td>1</td>
                     <td>Bund Suppengrün</td>
@@ -124,7 +139,19 @@
             </tbody>
         </table>
     </section>
-
+    <section class="preperation">
+        <h2>Zubereitung</h2>
+        <div class="preperation_time">
+            <div class="icons">
+                <img src="../img/icons/clock-regular.svg" alt="Zeit">
+                <p>Vorbereitung: 1 Stunde</p>
+            </div>
+            <div class="icons">
+                <img src="../img/icons/clock-regular.svg" alt="Zeit">
+                <p>Zubereitung: 1 Stunde 30 Minuten</p>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
