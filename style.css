@@ -94,9 +94,6 @@ header{
 
 /* Sections */
 section{
-    #randomDish{
-
-    }
     #news{
         div.wrapper{
             display: flex;
