@@ -164,8 +164,24 @@ footer{
     margin: 30px 0px 30px 0px;
 }
 
+.recipeinformation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
 
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
 
+.recipeinformation img {
+    height: 16px;
+    width: 16px;
+}
 /*** MEDIA QUERIES ***/
 /* calculated with em (base 16px) */
 /* Large devices (tablets, 768px - 1280px) */
