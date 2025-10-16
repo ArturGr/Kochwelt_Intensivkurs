@@ -289,7 +289,7 @@ footer{
         }
     }
 }
-#artcile{
+#bonus_article{
     h2{
         text-align: center;
     }
@@ -596,7 +596,7 @@ footer{
         }
     }
 
-    #randomDish{
+    #highlight_recipe{
         .content{
             img{
                 max-width: 100%;
@@ -610,7 +610,7 @@ footer{
 
 /* Medium devices (mobile, 768px and down) */
 @media only screen and (max-width: 48rem) {
-    #randomArtcile{
+    #bonus_article{
         div.content{
             article{
                 display: flex;
