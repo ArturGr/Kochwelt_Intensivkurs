@@ -11,147 +11,179 @@
 <body>
     <header>
         <div class="wrapper">
-            <div class="inner">
-                <div id="logo">
-                    <a href="index.html"><img src="../img/logo.png" alt="Kochwelt Logo TEST"></a>
-                </div>
-                <nav>
-                    <ul id="mainMenu">
-                        <li class="active"><a href="index.html">Start</a></li>
-                        <li><a href="#">Rezept des Tages</a></li>
-                        <li><a href="./unterseiten/kontakt.html">Kontakt</a></li>
-                        <li><a href="./unterseiten/impressum.html">Impressum</a></li>
-                    </ul>
-                    <!-- Burger Menu (hidden default) - toggled with JS (toggleMenu) -->
-                    <button id="burgerMenu" type="button" aria-label="Menü einblenden">
-                        <div class="stroke"></div>
-                        <div class="stroke"></div>
-                        <div class="stroke"></div>
-                    </button>
-                </nav>
+            <div id="logo">
+                <a href="index.html"><img src="../img/logo.png" alt="Kochwelt Logo TEST"></a>
             </div>
+            <nav>
+                <ul id="mainMenu">
+                    <li class="active"><a href="index.html">Start</a></li>
+                    <li><a href="#">Rezept des Tages</a></li>
+                    <li><a href="./unterseiten/kontakt.html">Kontakt</a></li>
+                    <li><a href="./unterseiten/impressum.html">Impressum</a></li>
+                </ul>
+                <!-- Burger Menu (hidden default) - toggled with JS (toggleMenu) -->
+                <button id="burgerMenu" type="button" aria-label="Menü einblenden">
+                    <div class="stroke"></div>
+                    <div class="stroke"></div>
+                    <div class="stroke"></div>
+                </button>
+            </nav>
+
         </div>
     </header>
     <section class="recipeimage">
-        <h1>Klassische Rinderrouladen</h1>
-        <img src="../img/Rinderrouladen.jpg" alt="Rinderrouladen">
-        <div class="recipeinformation">
-            <div class="icons">
-                <img src="../img/icons/clock-regular.svg" alt="Zeit">
-                <p>2h 30</p>
-            </div>
-            <div class="icons">
-                <img src="../img/icons/brain-solid.svg" alt="Schwierigkeitsgrad">
-                <p>Intermediate</p>
-            </div>
-            <div class="icons">
-                <img src="../img/icons/calendar-alt-regular.svg" alt="Datum">
-                <p>15.10.2025</p>
+        <div class="wrapper">
+            <div class="content">
+                <h1>Klassische Rinderrouladen</h1>
+                <img src="../img/Rinderrouladen.jpg" alt="Rinderrouladen">
+                <div class="recipeinformation">
+                    <div class="icons">
+                        <img src="../img/icons/clock-regular.svg" alt="Zeit">
+                        <p>2h 30</p>
+                    </div>
+                    <div class="icons">
+                        <img src="../img/icons/brain-solid.svg" alt="Schwierigkeitsgrad">
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="icons">
+                        <img src="../img/icons/calendar-alt-regular.svg" alt="Datum">
+                        <p>15.10.2025</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="incredients">
-        <form>
-            <label class="amount_label" for="amount">Zutaten für</label>
-            <input id="amount" type="number" min="1" max="12" value="1" required>
-            <button class="portions">Portionen</button>
-        </form>
-        <table>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td class="use_for">Für die Rouladen</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Scheiben Rinderrouladen</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Scheiben Speck</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Gewürzgurken</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>TL Dijon Senf - pro Roulade</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Schalotte, groß</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>EL Butterschmalz</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Salz und Pfeffer</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Küchengarn</td>
-                </tr>
-                <tr></tr>
-                <tr></tr>
-                <tr>
-                    <td></td>
-                    <td class="use_for">Für die Soße</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Bund Suppengrün</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Schalotten, groß</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>TL Tomatenmark</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>EL Zucker</td>
-                </tr>
-                <tr>
-                    <td>400</td>
-                    <td>ml Rotwein (trocken)</td>
-                </tr>
-                <tr>
-                    <td>400</td>
-                    <td>ml Rinderbrühe oder Fond</td>
-                </tr>
-                <tr>
-                    <td>60</td>
-                    <td>g Butter</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Bund Schnittlauch</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Salz und Pfeffer</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section class="preperation">
-        <h2>Zubereitung</h2>
-        <div class="preperation_time">
-            <div class="icons">
-                <img src="../img/icons/clock-regular.svg" alt="Zeit">
-                <p>Vorbereitung: 1 Stunde</p>
-            </div>
-            <div class="icons">
-                <img src="../img/icons/clock-regular.svg" alt="Zeit">
-                <p>Zubereitung: 1 Stunde 30 Minuten</p>
+        <div class="wrapper">
+            <div class="content">
+                <form>
+                    <label class="amount_label" for="amount">Zutaten für</label>
+                    <input id="amount" type="number" min="1" max="12" value="1" required>
+                    <button class="portions">Portionen</button>
+                </form>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td class="use_for">Für die Rouladen</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Scheiben Rinderrouladen</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Scheiben Speck</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Gewürzgurken</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>TL Dijon Senf - pro Roulade</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Schalotte, groß</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>EL Butterschmalz</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Salz und Pfeffer</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Küchengarn</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr>
+                            <td></td>
+                            <td class="use_for">Für die Soße</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Bund Suppengrün</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Schalotten, groß</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>TL Tomatenmark</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>EL Zucker</td>
+                        </tr>
+                        <tr>
+                            <td>400</td>
+                            <td>ml Rotwein (trocken)</td>
+                        </tr>
+                        <tr>
+                            <td>400</td>
+                            <td>ml Rinderbrühe oder Fond</td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>g Butter</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Bund Schnittlauch</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Salz und Pfeffer</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
+    <section class="preperation">
+        <div class="wrapper">
+            <div class="content">
+                <h2>Zubereitung</h2>
+                <div class="preperation_time">
+                    <div class="icons">
+                        <img src="../img/icons/clock-regular.svg" alt="Zeit">
+                        <p>Vorbereitung: 1 Stunde</p>
+                    </div>
+                    <div class="icons">
+                        <img src="../img/icons/clock-regular.svg" alt="Zeit">
+                        <p>Zubereitung: 1 Stunde 30 Minuten</p>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>abc</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="content">
+                <div id="logoFooter">
+                    <a href="index.html"><img src="./img/logo_small.png" alt="Kochwelt Logo klein" /></a>
+                </div>
+                <nav id="navFooter">
+                    <ul>
+                        <li class="active"><a href="index.html">Start</a></li>
+                        <li><a href="./unterseiten/kontakt.html">Kontakt</a></li>
+                        <li><a href="./unterseiten/impressum.html">Impressum</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
