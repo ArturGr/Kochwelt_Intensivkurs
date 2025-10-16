@@ -447,8 +447,8 @@ footer{
                     &:first-child{
                         border-top-left-radius: 0.5rem;
                         border-bottom-left-radius: 0.5rem;
-                        width: 40px;
-                        text-align: end;
+                        width: 80px;
+                        text-align: center;
                     }
                     &:last-child{
                         border-top-right-radius: 0.5rem;
@@ -622,4 +622,13 @@ footer{
 }
 
 /* Small devices (mobile, 400px and down) */
-@media only screen and (max-width: 25rem) {}
+@media only screen and (max-width: 25rem) {
+    div.wrapper{
+        padding: 0 1rem;
+    }
+    footer{
+        #logoFooter{
+            display: none;
+        }
+    }
+}
