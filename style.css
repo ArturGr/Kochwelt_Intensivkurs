@@ -28,6 +28,11 @@
     margin: 0;
     padding: 0;
     font-size: 16px;
+    line-height: 1.4;
+}
+
+p{
+    margin: 0.5em 0;
 }
 
 html {
@@ -56,6 +61,9 @@ img {
 
 body {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header,
@@ -65,7 +73,8 @@ footer {
     justify-content: center;
 }
 main{
-    min-height: calc(100vh - 15.75rem);
+    flex: 1;
+    min-height: 5em;
 }
 div.wrapper{
     display: flex;
@@ -179,6 +188,7 @@ header {
     }
 }
 
+/* Startseite */
 /* Sections */
 #randomDish {
     .content {
@@ -197,6 +207,7 @@ header {
             a {
                 text-align: center;
                 padding: 1rem 2rem;
+                max-width: 33%;
                 border: 0;
                 color: var(--white);
                 background-color: var(--green);
@@ -208,10 +219,8 @@ header {
         }
     }
 }
-
 #news {
     background-color: var(--grey-light);
-
     h2 {
         text-align: center;
     }
@@ -238,7 +247,6 @@ header {
 
     }
 }
-
 #randomArtcile{
     h2{
         text-align: center;
@@ -255,6 +263,7 @@ header {
     }
 }
 
+/* Footer */
 footer{
     padding: 1.5rem 0;
     background-color: var(--grey-darker);
@@ -298,6 +307,7 @@ footer{
 #impressum {
     div.wrapper {
         flex-direction: column;
+        text-align: center;
     }
 }
 
