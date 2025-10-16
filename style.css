@@ -160,19 +160,22 @@ header {
 
                 li {
                     padding: 1rem 2rem;
+                    border-bottom: 4px solid var(--white);
 
                     &.active {
-                        border-bottom: 2px solid var(--green);
+                        border-bottom: 4px solid var(--green);
 
                         a {
                             color: var(--green);
                             font-weight: bold;
                         }
+                        &:hover {
+                            border-bottom: 4px solid var(--green);
+                        }
                     }
 
                     &:hover {
-                        border-bottom: 2px solid var(--green);
-
+                        border-bottom: 4px solid var(--grey-light);
                         a {
                             color: var(--green);
                             font-weight: bold;
@@ -219,6 +222,7 @@ header {
         }
     }
 }
+
 #news {
     background-color: var(--grey-light);
     h2 {
@@ -233,18 +237,15 @@ header {
         figure{
             width: 100%;
             display: block;
-
             img {
                 width: 100%;
             }
-
             figcaption {
                 text-align: center;
                 font-weight: bold;
                 margin-top: 0.5rem;
             }
         }
-
     }
 }
 #randomArtcile{
@@ -260,6 +261,19 @@ header {
                 max-width: 50%;;
             }
         }
+    }
+}
+
+/* Contact */
+#contactHeadline{
+    .content{
+        flex-direction: column;
+    }
+}
+#contactForm{
+    background-color: var(--grey-light);
+    .content{
+        flex-direction: column;
     }
 }
 
