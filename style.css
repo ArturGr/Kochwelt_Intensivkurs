@@ -312,6 +312,19 @@ footer{
 }
 
 /* Rezept Nadine */
+
+/* Rezept Artur */
+.divArtur{
+	margin-top: 16px;
+}
+.olArtur{
+	margin-left: 16px;
+}
+.ulArtur{
+	margin-left: 16px; 
+	list-style-type: disc;
+}
+
 /* Section Recipeimage */
 .recipeimage {
     flex-direction: column;

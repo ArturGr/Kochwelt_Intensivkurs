@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Kochrezepte - Spinatroulade mit Lachs und Frischkäse</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <link rel="icon" type="image/x-icon" href="../img/logo_small.png">
 </head>
-<body id="rezeptAg">
-  
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="inner">
+                <div id="logo">
+                    <a href="../index.html"><img src="../img/logo.png" alt="Kochwelt Logo TEST"></a>
+                </div>
+                <nav>
+                    <ul id="mainMenu">
+                        <li class="active"><a href="../index.html">Start</a></li>
+                        <li><a href="#">Rezept des Tages</a></li>
+                        <li><a href="./kontakt.html">Kontakt</a></li>
+                        <li><a href="./impressum.html">Impressum</a></li>
+                    </ul>
+                    <!-- Burger Menu (hidden default) - toggled with JS (toggleMenu) -->
+                    <button id="burgerMenu" type="button" aria-label="Menü einblenden">
+                        <div class="stroke"></div>
+                        <div class="stroke"></div>
+                        <div class="stroke"></div>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="recipeimage">
+        <h1>Spinatroulade mit Lachs und Frischkäse</h1>
+        <img src="../img/Spinatroulade.jpg" alt="Spinatroulade">
+        <div class="recipeinformation">
+            <div class="icons">
+                <img src="../img/icons/clock-regular.svg" alt="Zeit">
+                <p>3h</p>
+            </div>
+            <div class="icons">
+                <img src="../img/icons/brain-solid.svg" alt="Schwierigkeitsgrad">
+                <p>Intermediate</p>
+            </div>
+            <div class="icons">
+                <img src="../img/icons/calendar-alt-regular.svg" alt="Datum">
+                <p>15.10.2025</p>
+            </div>
+        </div>
+    </section>
+    <section class="incredients">
+        <form>
+            <label class="amount_label" for="amount">Zutaten für</label>
+            <input id="amount" type="number" min="1" max="12" value="1" required>
+            <button class="portions">Portionen</button>
+        </form>
+        <table>
+            <tbody>
+                <th colspan="2" class="use_for">Für den Spinatteig:</th>
+                <tr>
+                    <td>450</td>
+                    <td>g gefrorener Spinat (oder ca. 200 g frischer Spinat)</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>große Eier</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Esslöffel Weizenmehl (oder Mais-/Kartoffelstärke)</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Knoblauchzehen</td>
+                </tr>
+                <tr>
+                    <td>1/3</td>
+                    <td>Teelöffel Muskatnuss</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Salz und Pfeffer nach Geschmack</td>
+                </tr>
+                <br>
+                <th colspan="2" class="use_for">Für die Füllung:</th>
+                <tr>
+                    <td>300</td>
+                    <td>g Frischkäse (z.B. Naturfrischkäse, Philadelphia-Typ)</td>
+                </tr>
+                <tr>
+                    <td>100</td>
+                    <td>g geräucherter Lachs in Scheiben</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>TL Tomatenmark</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Eine Handvoll frischer Dill</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Salz und Pfeffer nach Geschmack</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="preperation">
+        <h2>Zubereitung</h2>
+         <div class="preperation_time">
+            <div class="icons">
+                <img src="../img/icons/clock-regular.svg" alt="Zeit">
+                <p>Vorbereitung: 1 Stunde</p>
+            </div>
+            <div class="icons">
+                <img src="../img/icons/clock-regular.svg" alt="Zeit">
+                <p>Zubereitung: 2 Stunde</p>
+            </div>
+        </div>
+        <div class="divArtur">
+        <ol type="1" class="olArtur">
+            <li>Spinat vorbereiten:</li> 
+                <ul class="ulArtur">
+                    <li>Gefrorenen Spinat auftauen lassen und das überschüssige Wasser gründlich ausdrücken. Frischen Spinat blanchieren, abkühlen lassen und ebenfalls ausdrücken.</li>
+                    <li>Den Knoblauch durch eine Presse zum Spinat geben. Mit Salz, Pfeffer und Muskatnuss würzen.</li>
+                </ul>
+            <li>Teig zubereiten:</li>
+                <ul class="ulArtur">
+                    <li>Die Eier trennen.</li>
+                    <li>Die Eigelbe mit dem ausgedrückten Spinat und dem Mehl vermischen.</li>
+                    <li>Die Eiweiße mit einer Prise Salz zu steifem Schnee schlagen.</li>
+                    <li>Den Eischnee vorsichtig mit einem Spatel unter die Spinatmasse heben, damit der Teig luftig bleibt.</li>
+                </ul>
+            <li>Backen:</li>
+                <ul class="ulArtur">
+                    <li>Ein Backblech (ca. 30x40 cm) mit Backpapier auslegen.</li>
+                    <li>Die Spinatmasse gleichmäßig auf dem Backpapier verteilen.</li>
+                    <li>Im auf 160-170°C vorgeheizten Backofen etwa 15-20 Minuten backen, bis der Teig elastisch ist.</li>
+                </ul>
+            <li>Rollen:</li>
+                <ul class="ulArtur">
+                    <li>Direkt nach dem Herausnehmen aus dem Ofen den heißen Spinatteig zusammen mit dem Backpapier (von der längeren Seite beginnend) zu einer Rolle aufrollen.</li>
+                    <li>Zum Abkühlen beiseitestellen. Das Rollen im heißen Zustand verhindert, dass der Teig bricht.</li>
+                </ul>
+            <li>Füllung zubereiten:</li>
+                <ul class="ulArtur">
+                    <li>Den Frischkäse mit dem fein gehackten Dill vermischen. Mit Salz und Pfeffer abschmecken.</li>
+                </ul>
+            <li>Fertigstellung:</li>
+                <ul class="ulArtur">
+                    <li>Den abgekühlten Spinatteig vorsichtig entrollen.</li>
+                    <li>Gleichmäßig mit der vorbereiteten Frischkäsecreme bestreichen.</li>
+                    <li>Die Scheiben des geräucherten Lachses auf der Käsecreme verteilen.</li>
+                    <li>Alles wieder zu einer festen Rolle aufrollen, diesmal ohne das Backpapier.</li>
+                    <li>Die Roulade in Frischhaltefolie wickeln und für mindestens 1-2 Stunden in den Kühlschrank stellen, damit sie fest wird.</li>
+                    <li>Vor dem Servieren die Roulade in etwa 1,5-2 cm dicke Scheiben schneiden.</li>
+                </ul>
+        </ol>
+        </div>
+    </section>
+        <footer>
+        <div class="wrapper">
+            <div class="inner">
+                <div class="content">
+                    <div id="logoFooter">
+                        <a href="../index.html"><img src="../img/logo_small.png" alt="Kochwelt Logo klein"/></a>
+                    </div>
+                    <nav id="navFooter">
+                        <ul>
+                            <li class="active"><a href="../index.html">Start</a></li>
+                            <li><a href="./kontakt.html">Kontakt</a></li>
+                            <li><a href="./impressum.html">Impressum</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
