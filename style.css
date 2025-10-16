@@ -54,7 +54,6 @@ a {
 }
 img {
     width: 100%;
-    max-width: 45rem;
     border-radius: 1rem;
 }
 body {
@@ -373,9 +372,11 @@ footer{
 }
 
 /* Section Recipeimage */
+/*
 .recipeimage {
     flex-direction: column;
 }
+*/
 
 .recipeimage img {
     height: 250px;
@@ -407,10 +408,12 @@ footer{
 
 /* Section Incredients */
 
+/*
 .incredients {
     justify-content: start;
     flex-direction: column;
 }
+*/
 
 #amount {
     height: 32px;
