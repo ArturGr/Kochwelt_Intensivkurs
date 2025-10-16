@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezept - Kartoffelpüree mit Spinat & Fischstäbchen</title>
+    <title>Kochwelt - Start</title>
     <link rel="stylesheet" href="../style.css">
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
     <link rel="icon" type="image/x-icon" href="../img/logo_small.png">
 </head>
-<body id="rezeptVd">
+
+<body>
     <header>
         <div class="wrapper">
             <div id="logo">
-                <a href="../index.html"><img src="../img/logo.png" alt="Kochwelt Logo"></a>
+                <a href="../index.html"><img src="../img/logo.png" alt="Kochwelt Logo TEST"></a>
             </div>
             <nav>
                 <ul id="mainMenu">
-                    <li class="active"><a href="index.html">Start</a></li>
-                    <li><a href="kochrezeptNB.html">Rezept des Tages</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="impressum.html">Impressum</a></li>
+                    <li class="active"><a href="../index.html">Start</a></li>
+                    <li><a href="#">Rezept des Tages</a></li>
+                    <li><a href="./unterseiten/kontakt.html">Kontakt</a></li>
+                    <li><a href="./unterseiten/impressum.html">Impressum</a></li>
                 </ul>
                 <!-- Burger Menu (hidden default) - toggled with JS (toggleMenu) -->
                 <button id="burgerMenu" type="button" aria-label="Menü einblenden">
@@ -28,22 +30,23 @@
                     <div class="stroke"></div>
                 </button>
             </nav>
+
         </div>
     </header>
     <main>
         <section class="recipeimage">
             <div class="wrapper">
                 <div class="content">
-                    <h1>Kartoffelpüree mit Spinat & Fischstäbchen</h1>
-                    <img src="../img/kapue_spinat_fischtstae.jpg" alt="Kartoffelpüree mit Spinat & Fischstäbchen" />
+                    <h1>Klassische Rinderrouladen</h1>
+                    <img src="../img/Rinderrouladen.jpg" alt="Rinderrouladen">
                     <div class="recipeinformation">
                         <div class="icons">
                             <img src="../img/icons/clock-regular.svg" alt="Zeit">
-                            <p>45m</p>
+                            <p>2h 30</p>
                         </div>
                         <div class="icons">
                             <img src="../img/icons/brain-solid.svg" alt="Schwierigkeitsgrad">
-                            <p>Easy</p>
+                            <p>Intermediate</p>
                         </div>
                         <div class="icons">
                             <img src="../img/icons/calendar-alt-regular.svg" alt="Datum">
@@ -61,34 +64,33 @@
                         <input id="amount" type="number" min="1" max="12" value="1" required>
                         <button class="portions">Portionen</button>
                     </form>
-                    <table> 
+                    <table>
                         <tbody>
                             <tr>
-                                <td></td>
-                                <td class="use_for">Für die Rouladen</td>
+                                <th class="use_for" colspan="2">Für die Rouladen</th>
                             </tr>
                             <tr>
-                                <td>2</td>
+                                <td class="number">2</td>
                                 <td>Scheiben Rinderrouladen</td>
                             </tr>
                             <tr>
-                                <td>2</td>
+                                <td class="number">2</td>
                                 <td>Scheiben Speck</td>
                             </tr>
                             <tr>
-                                <td>2</td>
+                                <td class="number">2</td>
                                 <td>Gewürzgurken</td>
                             </tr>
                             <tr>
-                                <td>2</td>
+                                <td class="number">2</td>
                                 <td>TL Dijon Senf - pro Roulade</td>
                             </tr>
                             <tr>
-                                <td>1</td>
+                                <td class="number">1</td>
                                 <td>Schalotte, groß</td>
                             </tr>
                             <tr>
-                                <td>1</td>
+                                <td class="number">1</td>
                                 <td>EL Butterschmalz</td>
                             </tr>
                             <tr>
@@ -99,42 +101,39 @@
                                 <td></td>
                                 <td>Küchengarn</td>
                             </tr>
-                            <tr></tr>
-                            <tr></tr>
                             <tr>
-                                <td></td>
-                                <td class="use_for">Für die Soße</td>
+                                <th class="use_for" colspan="2">Für die Soße</th>
                             </tr>
                             <tr>
-                                <td>1</td>
+                                <td class="number">1</td>
                                 <td>Bund Suppengrün</td>
                             </tr>
                             <tr>
-                                <td>2</td>
+                                <td class="number">2</td>
                                 <td>Schalotten, groß</td>
                             </tr>
                             <tr>
-                                <td>1</td>
+                                <td class="number">1</td>
                                 <td>TL Tomatenmark</td>
                             </tr>
                             <tr>
-                                <td>1</td>
+                                <td class="number">1</td>
                                 <td>EL Zucker</td>
                             </tr>
                             <tr>
-                                <td>400</td>
+                                <td class="number">400</td>
                                 <td>ml Rotwein (trocken)</td>
                             </tr>
                             <tr>
-                                <td>400</td>
+                                <td class="number">400</td>
                                 <td>ml Rinderbrühe oder Fond</td>
                             </tr>
                             <tr>
-                                <td>60</td>
+                                <td class="number">60</td>
                                 <td>g Butter</td>
                             </tr>
                             <tr>
-                                <td>1</td>
+                                <td class="number">1</td>
                                 <td>Bund Schnittlauch</td>
                             </tr>
                             <tr>
@@ -160,6 +159,26 @@
                             <p>Zubereitung: 1 Stunde 30 Minuten</p>
                         </div>
                     </div>
+                    <div class="preperationDesc">
+                        <ol>
+                            <li>Test</li>
+                            <li>Test</li>
+                            <li>Test</li>
+                            <li>Test</li>
+                            <li>Test</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="author">
+            <div class="wrapper">
+                <div class="content">
+                    <h3>Rezept erstellt von:</h3>
+                    <div class="profil">
+                        <img src="../img/profile.png">
+                        <p>Test Name</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -168,17 +187,18 @@
         <div class="wrapper">
             <div class="content">
                 <div id="logoFooter">
-                    <a href="index.html"><img src="../img/logo_small.png" alt="Kochwelt Logo klein"/></a>
+                    <a href="../index.html"><img src="../img/logo_small.png" alt="Kochwelt Logo klein" /></a>
                 </div>
                 <nav id="navFooter">
                     <ul>
-                        <li class="active"><a href="index.html">Start</a></li>
-                        <li><a href="./unterseiten/kontakt.html">Kontakt</a></li>
-                        <li><a href="./unterseiten/impressum.html">Impressum</a></li>
+                        <li><a href="../index.html">Start</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
