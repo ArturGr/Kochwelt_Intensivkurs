@@ -264,12 +264,22 @@ footer{
         .recipes{
             display: flex;
             gap: 2rem;
+            a{
+                width:calc(100% / 3);
+                &:hover{
+                    img{
+                        box-shadow: inset 5px 5px 5px var(--black);
+                    }
+                }
+            }
         }
         figure{
             width: 100%;
             display: block;
             img {
                 width: 100%;
+                height: 300px;
+                object-fit: cover;
             }
             figcaption {
                 text-align: center;
@@ -399,7 +409,7 @@ footer{
         padding-top: 1rem;
         border-top: 1px solid var(--grey-light);
 
-        #amount{
+        #portions{
             height: 32px;
             width: 100px;
             text-align: center;
@@ -409,6 +419,7 @@ footer{
         }
 
         button{
+            cursor: pointer;
             height: 36px;
             width: 110px;
             background-color: #008001;
@@ -485,9 +496,8 @@ footer{
 /* Large devices (tablets, 768px - 1280px) */
 @media only screen and (min-width: 48.01rem) and (max-width: 80rem) {}
 
-/* Medium devices (mobile, 768px and down) */
+/* Medium devices (mobile, 1000px and down) */
 @media only screen and (max-width: 62.5rem) {
-
     /* Header */
     header{
         div.wrapper{
@@ -502,7 +512,6 @@ footer{
                         display: flex;
                         flex-direction: column;
                         background-color: var(--grey-light);
-
                         li {
                             border: 0 !important;
 
@@ -510,7 +519,6 @@ footer{
                                 background-color: var(--grey-light);
                             }
                         }
-
                         &:after {
                             content: "";
                             position: absolute;
@@ -523,7 +531,6 @@ footer{
                         }
                     }
                 }
-
                 #burgerMenu {
                     display: flex;
                 }
@@ -547,6 +554,35 @@ footer{
             }
             .recipes{
                 flex-direction: column;
+            }
+        }
+    }
+
+    #news {
+        div.wrapper{
+            justify-content: center;
+        }
+        .content{
+            .recipes{
+                display: flex;
+                gap: 2rem;
+                a{
+                    width:calc(100%);
+                }
+            }
+            figure{
+                width: 100%;
+                display: block;
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+                figcaption {
+                    text-align: center;
+                    font-weight: bold;
+                    margin-top: 0.5rem;
+                }
             }
         }
     }
