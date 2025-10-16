@@ -569,8 +569,8 @@ footer {
 /* Large devices (tablets, 768px - 1280px) */
 @media only screen and (min-width: 48.01rem) and (max-width: 80rem) {}
 
-/* Medium devices (mobile, 1000px and down) */
-@media only screen and (max-width: 63.938rem) {
+/* Medium devices (laptop-tablet, 1023px and down) */
+@media only screen and (max-width: 64rem)
 
     /* Header */
     header {
@@ -609,20 +609,12 @@ footer {
                     }
                 }
 
-                s#burgerMenu {
-                display: flex;
+                #burgerMenu {
+                    display: flex;
+                }
             }
         }
     }
-}
-
-
-#logo img {
-    max-width: 20rem;
-}
-
-.active {
-    padding: 0.5rem 1rem;
 }
 
 /* Sections */
