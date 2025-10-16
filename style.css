@@ -353,6 +353,10 @@ footer{
     flex-direction: row;
     gap: 32px;
 }
+.ulArtur{
+    margin-left: 16px;
+    list-style-type: disc;
+}
 
 /* Rezeptseiten */
 
