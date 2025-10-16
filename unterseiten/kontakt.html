@@ -46,39 +46,33 @@
         </section>
         <section id="contactForm">
             <div class="wrapper">
-                <div class="inner">
-                    <div class="content">
-                        <h2>Kontakt Formular</h2>
-                        <form>
-                            <fieldset>
-                                <legend>Personal Information</legend>
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="user_name">
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="user_email">
-                            </fieldset>
-                        </form>
-                    </div>
+                <div class="content">
+                    <h2>Kontakt Formular</h2>
+                    <form>
+                        <label for="name">Dein Name: </label><br>
+                        <input type="text" required name="name" id="dein_name"><br>
+                        <label for="E-Mail">Deine E-Mail: </label><br>
+                        <input type="email" required name="E-Mail" id="deine_email"><br>
+                        <label for="nachricht">Deine Nachricht: </label><br>
+                        <textarea  rows="5" cols="20" required name="nachricht" id="deine_nachricht"></textarea><br>
+                        <button type="submit" onclick="location.href='send_mail.html'">Abschicken</button>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="wrapper">
-            <div class="inner">
                 <div class="content">
                     <div id="logoFooter">
                         <a href="../index.html"><img src="../img/logo_small.png" alt="Kochwelt Logo klein"/></a>
                     </div>
-                    <nav id="navFooter">
-                        <ul>
-                            <li class="active"><a href="../index.html">Start</a></li>
-                            <li><a href="kontakt.html">Kontakt</a></li>
-                            <li><a href="impressum.html">Impressum</a></li>
-                        </ul>
-                    </nav>
+                    <div class="logoFooterKontakt">
+                        <a href="https://www.facebook.com/"><img src="../img/facebook_white.png" alt="Facebook Logo"/></a>
+                        <a href="https://www.instagram.com/"><img src="../img/instagram_white.png" alt="Instagram Logo"/></a>
+                        <a href="https://x.com/"><img src="../img/twitter_white.png" alt="Twitter Logo"/></a>
+                    </div>
                 </div>
-            </div>
         </div>
     </footer>
 </body>

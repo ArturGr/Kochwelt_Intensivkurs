@@ -271,6 +271,26 @@ header {
     background-color: var(--grey-light);
     .content{
         flex-direction: column;
+        width: 100%;
+        form{
+            input{
+                width: 100%;
+                margin-bottom: 40px;
+            }
+            textarea{
+                width: 100%;
+                margin-bottom: 40px;  
+            }
+            button{
+                height: 36px;
+                width: 110px;
+                background-color: #008001;
+                color: #ffffff;
+                border: none;
+                display: block;
+                margin: auto;
+            }
+        }
     }
 }
 
@@ -328,15 +348,10 @@ footer{
 /* Rezept Nadine */
 
 /* Rezept Artur */
-.divArtur{
-	margin-top: 16px;
-}
-.olArtur{
-	margin-left: 16px;
-}
-.ulArtur{
-	margin-left: 16px; 
-	list-style-type: disc;
+.logoFooterKontakt{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
 }
 
 /* Rezeptseiten */
