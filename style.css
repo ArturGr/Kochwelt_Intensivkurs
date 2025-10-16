@@ -352,8 +352,14 @@ footer{
 .logoFooterKontakt{
     display: flex;
     flex-direction: row;
-    gap: 32px;
-}
+    gap: 8px;
+        a{
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
 .ulArtur{
     margin-left: 16px;
     list-style-type: disc;
