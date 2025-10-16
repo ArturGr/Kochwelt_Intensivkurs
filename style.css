@@ -144,8 +144,6 @@ header {
             img {
                 max-width: 20rem;
             }
-
-            ;
         }
 
         nav {
@@ -188,6 +186,43 @@ header {
     }
 }
 
+/* Footer */
+footer{
+    padding: 1.5rem 0;
+    background-color: var(--grey-darker);
+    div.wrapper{
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    #logoFooter {
+        img {
+            max-width: 5rem;
+            /*  */
+            filter: brightness(0) invert(1);
+        }
+    }
+    #navFooter {
+        ul {
+            display: flex;
+
+            li {
+                padding: 0 1rem;
+                a {
+                    color: var(--white);
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* Startseite */
 /* Sections */
 #randomDish {
@@ -219,7 +254,6 @@ header {
         }
     }
 }
-
 #news {
     background-color: var(--grey-light);
     h2 {
@@ -261,6 +295,7 @@ header {
     }
 }
 
+/*** Unterseiten ***/
 /* Contact */
 #contactHeadline{
     .content{
@@ -293,50 +328,6 @@ header {
         }
     }
 }
-
-/* Footer */
-footer{
-    padding: 1.5rem 0;
-    background-color: var(--grey-darker);
-    div.wrapper{
-        width: 100%;
-    }
-    .content{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    #logoFooter {
-        img {
-            max-width: 5rem;
-            /*  */
-            filter: brightness(0) invert(1);
-        }
-    }
-
-    #navFooter {
-        ul {
-            display: flex;
-
-            li {
-                padding: 0 1rem;
-
-                a {
-                    color: var(--white);
-
-                    &:hover {
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-    }
-}
-
-/* Unterseiten */
-
 /* Impressum */
 #impressum {
     div.wrapper {
@@ -345,9 +336,8 @@ footer{
     }
 }
 
-/* Rezept Nadine */
-
 /* Rezept Artur */
+/*** Wird das noch benötigt? ***/
 .logoFooterKontakt{
     display: flex;
     flex-direction: row;
@@ -359,7 +349,6 @@ footer{
 }
 
 /* Rezeptseiten */
-
 .recipeimage,
 .incredients,
 .preperation,
@@ -369,7 +358,6 @@ footer{
         width: 100%;
     }
 }
-
 .icons{
     display: flex;
     flex-direction: row;
@@ -410,6 +398,23 @@ footer{
         padding-top: 1rem;
         border-top: 1px solid var(--grey-light);
 
+        #amount{
+            height: 32px;
+            width: 100px;
+            text-align: center;
+            margin-left: 8px;
+            border-color: rgba(0, 0, 0, 0.15);
+            font-weight: bold;
+        }
+
+        button{
+            height: 36px;
+            width: 110px;
+            background-color: #008001;
+            color: #ffffff;
+            border: none;
+        }
+
         table{
             margin-top: 1rem;
             border-collapse: collapse;
@@ -433,34 +438,27 @@ footer{
                     }
                     &.use_for{
                         text-align: left;
+                        font-weight: bold;
                         background-color: var(--white);
                     }
                 }
             }
         }
     }
-
-    #amount {
-        height: 32px;
-        width: 100px;
-        text-align: center;
-        margin-left: 8px;
-        border-color: rgba(0, 0, 0, 0.15);
-        font-weight: bold;
+}
+.preperation{
+    .preperationDesc{
+        margin:2rem 1rem;
     }
-    .use_for {
-        font-weight: bold;
+    img{
+        height: 16px;
+        width: 16px;
     }
-
-    button{
-        height: 36px;
-        width: 110px;
-        background-color: #008001;
-        color: #ffffff;
-        border: none;
+    .preperation_time {
+        display: flex;
+        gap: 24px;
     }
 }
-
 .author{
     padding-top:0;
     .profil{
@@ -480,22 +478,6 @@ footer{
     }
 }
 
-.preperationDesc{
-    margin:2rem 1rem;
-}
-
-/* Section Incredients */
-
-/* Section Preperation */
-.preperation_time {
-    display: flex;
-    gap: 24px;
-}
-
-.preperation img {
-    height: 16px;
-    width: 16px;
-}
 
 /*** MEDIA QUERIES ***/
 /* calculated with em (base 16px) */
@@ -558,11 +540,16 @@ footer{
                 object-fit: cover;
                 object-position: 50% 50%;
             }
+            .icons img{
+                height: 16px;
+                width: 16px;
+            }
             .recipes{
                 flex-direction: column;
             }
         }
     }
+
     #randomDish{
         .content{
             img{

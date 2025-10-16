@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kochwelt - Start</title>
+    <title>Kochwelt - Reezept - Kartoffelpüree mit Spinat & Fischstäbchen</title>
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js"></script>
     <link rel="icon" type="image/x-icon" href="../img/logo_small.png">
@@ -20,8 +20,8 @@
                 <ul id="mainMenu">
                     <li class="active"><a href="../index.html">Start</a></li>
                     <li><a href="#">Rezept des Tages</a></li>
-                    <li><a href="./unterseiten/kontakt.html">Kontakt</a></li>
-                    <li><a href="./unterseiten/impressum.html">Impressum</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
                 </ul>
                 <!-- Burger Menu (hidden default) - toggled with JS (toggleMenu) -->
                 <button id="burgerMenu" type="button" aria-label="Menü einblenden">
@@ -37,20 +37,20 @@
         <section class="recipeimage">
             <div class="wrapper">
                 <div class="content">
-                    <h1>Klassische Rinderrouladen</h1>
-                    <img src="../img/Rinderrouladen.jpg" alt="Rinderrouladen">
+                    <h1>Kartoffelpüree mit Spinat & Fischstäbchen</h1>
+                    <img src="../img/kapue_spinat_fischtstae.jpg" alt="Kartoffelpüree mit Spinat & Fischstäbchen">
                     <div class="recipeinformation">
                         <div class="icons">
                             <img src="../img/icons/clock-regular.svg" alt="Zeit">
-                            <p>2h 30</p>
+                            <p>45m</p>
                         </div>
                         <div class="icons">
                             <img src="../img/icons/brain-solid.svg" alt="Schwierigkeitsgrad">
-                            <p>Intermediate</p>
+                            <p>Anfänger</p>
                         </div>
                         <div class="icons">
                             <img src="../img/icons/calendar-alt-regular.svg" alt="Datum">
-                            <p>15.10.2025</p>
+                            <p>16.10.2025</p>
                         </div>
                     </div>
                 </div>
@@ -60,85 +60,56 @@
             <div class="wrapper">
                 <div class="content">
                     <form>
-                        <label class="amount_label" for="amount">Zutaten für</label>
-                        <input id="amount" type="number" min="1" max="12" value="1" required>
+                        <label class="portions_label" for="portions">Zutaten für</label>
+                        <input id="portions" type="number" min="1" max="12" value="1" required>
                         <button class="portions">Portionen</button>
                     </form>
                     <table>
                         <tbody>
                             <tr>
-                                <th class="use_for" colspan="2">Für die Rouladen</th>
+                                <th class="use_for" colspan="2">für den Kapü</th>
                             </tr>
                             <tr>
-                                <td class="number">2</td>
-                                <td>Scheiben Rinderrouladen</td>
+                                <td class="amount">4</td>
+                                <td>Kartoffeln</td>
                             </tr>
                             <tr>
-                                <td class="number">2</td>
-                                <td>Scheiben Speck</td>
+                                <td class="amount">125 ml</td>
+                                <td>Milch</td>
                             </tr>
                             <tr>
-                                <td class="number">2</td>
-                                <td>Gewürzgurken</td>
-                            </tr>
-                            <tr>
-                                <td class="number">2</td>
-                                <td>TL Dijon Senf - pro Roulade</td>
-                            </tr>
-                            <tr>
-                                <td class="number">1</td>
-                                <td>Schalotte, groß</td>
-                            </tr>
-                            <tr>
-                                <td class="number">1</td>
-                                <td>EL Butterschmalz</td>
+                                <td class="amount">15 g</td>
+                                <td>Butter</td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>Salz und Pfeffer</td>
+                                <td>Muskatnuss</td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>Küchengarn</td>
+                                <td>Salz</td>
                             </tr>
                             <tr>
-                                <th class="use_for" colspan="2">Für die Soße</th>
+                                <th class="use_for" colspan="2">für den Spinat</th>
                             </tr>
                             <tr>
-                                <td class="number">1</td>
-                                <td>Bund Suppengrün</td>
-                            </tr>
-                            <tr>
-                                <td class="number">2</td>
-                                <td>Schalotten, groß</td>
-                            </tr>
-                            <tr>
-                                <td class="number">1</td>
-                                <td>TL Tomatenmark</td>
-                            </tr>
-                            <tr>
-                                <td class="number">1</td>
-                                <td>EL Zucker</td>
-                            </tr>
-                            <tr>
-                                <td class="number">400</td>
-                                <td>ml Rotwein (trocken)</td>
-                            </tr>
-                            <tr>
-                                <td class="number">400</td>
-                                <td>ml Rinderbrühe oder Fond</td>
-                            </tr>
-                            <tr>
-                                <td class="number">60</td>
-                                <td>g Butter</td>
-                            </tr>
-                            <tr>
-                                <td class="number">1</td>
-                                <td>Bund Schnittlauch</td>
+                                <td class="amount">250 g</td>
+                                <td>Rahmspinat</td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>Salz und Pfeffer</td>
+                                <td>Muskatnuss</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Salz</td>
+                            </tr>
+                            <tr>
+                                <th class="use_for" colspan="2">Für die Fischstäbchen</th>
+                            </tr>
+                            <tr>
+                                <td class="amount">4</td>
+                                <td>Backofen-Fischstäbchen</td>
                             </tr>
                         </tbody>
                     </table>
@@ -161,11 +132,9 @@
                     </div>
                     <div class="preperationDesc">
                         <ol>
-                            <li>Test</li>
-                            <li>Test</li>
-                            <li>Test</li>
-                            <li>Test</li>
-                            <li>Test</li>
+                            <li>Kartoffelpüü: Wasser mit Salz aufsetzen, derweil Kartoffeln schälen und in kleine Stücke schneiden. Die Kartoffeln nun ins Wasser geben und weich kochen. Die Milch mit einem Stück Butter erhitzen. Die gekochten Kartoffeln der Milch hinzu geben und mit einem Stampfer vermengen und zerstampfen, Milch und Butter dazugeben und mit Muskat, evt. Salz und Pfeffer abschmecken, ein Eigelb hinzu geben, der Geschmack wird noch einmal verfeinert und der Pürree ist nun gelblich.</li>
+                            <li>Fischstäbchen: Die Fischstäbchen derweil wie beschrieben auf einem Backblech in den Ofen schieben - Ja, etwas aus der Packung ist dabei...</li>
+                            <li>Spinat: Spinat kochen (Parallel die Eier "hart" kochen) mit kaltem Wasser abschrecken, abtropfen und ausdrücken danach Pürieren nebenbei eine Mehlschwitze (Butter erhitzen, mit Mehl glatt rühren und Milch hinzugeben) erstellen diese mit Muskat und beliebigen Gewürzen verfeinern und unterrühren. Die gekochten Eier schälen und in Würfel schneiden und hinzufügen. - Fertig ;) Lasst es euch schmecken!!!</li>
                         </ol>
                     </div>
                 </div>
@@ -177,7 +146,7 @@
                     <h3>Rezept erstellt von:</h3>
                     <div class="profil">
                         <img src="../img/profile.png">
-                        <p>Test Name</p>
+                        <p>Volker Derksen</p>
                     </div>
                 </div>
             </div>
