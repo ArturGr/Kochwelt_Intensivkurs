@@ -570,7 +570,7 @@ footer {
 @media only screen and (min-width: 48.01rem) and (max-width: 80rem) {}
 
 /* Medium devices (laptop-tablet, 1023px and down) */
-@media only screen and (max-width: 64rem)
+@media only screen and (max-width: 64rem) {
 
     /* Header */
     header {
