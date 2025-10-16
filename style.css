@@ -255,7 +255,8 @@ header {
             display: flex;
             gap: 2rem;
             img{
-                max-width: 50%;;
+                max-width: 50%;
+                object-fit: cover;
             }
         }
     }
