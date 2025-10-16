@@ -94,18 +94,21 @@ strong {
 
 /* Headlines */
 h1,
-h2 {
+h2,
+h3{
     font-weight: bold;
 }
-
 h1 {
     font-size: 2.25em;
     margin-bottom: 2rem;
 }
-
 h2 {
     font-size: 1.5em;
     margin-bottom: 1rem;
+}
+h3{
+    font-size: 1.3em;
+    margin-bottom: 0.5rem;
 }
 
 /* burger-menu */
@@ -336,124 +339,134 @@ footer{
 	list-style-type: disc;
 }
 
-/* Rezept Volker */
-#rezeptVd{
-    .recipeimage,
-    .incredients,
-    .preperation{
-        flex-direction: row;
-        justify-content: center;
-    }
-    .recipeimage{
-        img{
-            width: 100%;
-            max-width: 100%;
-            margin: 0;
-            border-radius: 1rem;
-        }
-    }
-    main{
-        div.content{
-            flex-direction: column;
-            width: 100%;
-        }
-    }
-    table{
-        tbody{
-            height: auto;
-            tr{
-                width: 100%;
-                &:nth-child(even){
-                    background: var(--grey-light);
-                }
-            }
-        }
+/* Rezeptseiten */
+
+.recipeimage,
+.incredients,
+.preperation,
+.author{
+    .content{
+        flex-direction: column;
+        width: 100%;
     }
 }
 
-/* Section Recipeimage */
-/*
-.recipeimage {
-    flex-direction: column;
-}
-*/
-
-.recipeimage img {
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-    object-position: center;
-    margin: 30px 0px 30px 0px;
-}
-
-.recipeinformation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-}
-
-.icons {
+.icons{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 8px;
+    padding: 0.5rem 1rem;
+    background-color: var(--grey-light);
+    border-radius: 0.5rem;
+    p{
+        margin: 0;
+    }
+}
+.recipeimage{
+    .recipeinformation{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        img{
+            margin: 0;
+            border-radius: 0;
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+    img{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        object-position: center;
+        margin: 0 0 2rem;
+    }
+}
+.incredients{
+    padding-top:0;
+    .content{
+        padding-top: 1rem;
+        border-top: 1px solid var(--grey-light);
+
+        table{
+            margin-top: 1rem;
+            border-collapse: collapse;
+
+            tr{
+                &:nth-child(even){
+                    background-color: var(--grey-light);
+                    border-radius: 1rem;
+                }
+                td,th{
+                    padding: 0.5rem;
+                    &:first-child{
+                        border-top-left-radius: 0.5rem;
+                        border-bottom-left-radius: 0.5rem;
+                        width: 50px;
+                    }
+                    &:last-child{
+                        border-top-right-radius: 0.5rem;
+                        border-bottom-right-radius: 0.5rem;
+                    }
+                    &.use_for{
+                        text-align: left;
+                        background-color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+
+    #amount {
+        height: 32px;
+        width: 100px;
+        text-align: center;
+        margin-left: 8px;
+        border-color: rgba(0, 0, 0, 0.15);
+        font-weight: bold;
+    }
+    .use_for {
+        font-weight: bold;
+    }
+
+    button{
+        height: 36px;
+        width: 110px;
+        background-color: #008001;
+        color: #ffffff;
+        border: none;
+    }
 }
 
-.recipeinformation img {
-    height: 16px;
-    width: 16px;
+.author{
+    padding-top:0;
+    .profil{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+        img{
+            max-width: 7rem;
+            height: auto;
+            border-radius: 7rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.preperationDesc{
+    margin:2rem 1rem;
 }
 
 /* Section Incredients */
 
-/*
-.incredients {
-    justify-content: start;
-    flex-direction: column;
-}
-*/
-
-#amount {
-    height: 32px;
-    width: 100px;
-    text-align: center;
-    margin-left: 8px;
-    border-color: rgba(0, 0, 0, 0.15);
-    font-weight: bold;
-}
-
-.incredients button {
-    height: 36px;
-    width: 110px;
-    background-color: #008001;
-    color: #ffffff;
-    border: none;
-}
-
-tbody {
-    display: block;
-    height: 250px;
-    width: 100%;
-    overflow: auto;
-}
-
-.use_for {
-    font-weight: bold;
-}
-
-tbody td:first-child {
-    width: 30px;
-    text-align: center;
-}
-
 /* Section Preperation */
-
-.preperation {
-    flex-direction: column;
-}
-
 .preperation_time {
     display: flex;
     gap: 24px;
