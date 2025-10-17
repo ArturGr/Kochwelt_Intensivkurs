@@ -325,6 +325,7 @@ footer {
                 overflow: hidden;
                 border-radius: 1rem;
                 transition: box-shadow 0.125s ease-in-out;
+
                 img {
                     width: 100%;
                     height: 300px;
@@ -539,7 +540,7 @@ footer {
             -webkit-transition: all .125s ease-in-out;
             transition: all .125s ease-in-out;
 
-            &:hover{
+            &:hover {
                 background-color: var(--green-darker);
             }
         }
@@ -762,15 +763,33 @@ footer {
 }
 
 /* Small devices (mobile, 400px and down) */
-@media only screen and (max-width: 25rem) {
+@media only screen and (max-width: 26.25rem) {
     div.wrapper {
         padding: 0 1rem;
+    }
+
+    #contactForm {
+        & .content {
+            & form {
+                input {
+                    padding: 0;
+                }
+
+                textarea {
+                    padding: 0;
+                }
+            }
+        }
     }
 
     footer {
         #logoFooter {
             display: none;
         }
+
+       .content {
+        justify-content: space-evenly;
+       }
     }
 
 
@@ -780,4 +799,47 @@ footer {
         }
     }
 
+    .recipeimage {
+
+        .recipeinformation {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    .incredients {
+
+        .content {
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+
+
+                #portions {
+                    margin: 0;
+
+                }
+            }
+        }
+    }
+
+    .preperation {
+
+        .preperation_time {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    #highlight_recipe {
+    & .content {
+        article {
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
 }
