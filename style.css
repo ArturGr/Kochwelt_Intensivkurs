@@ -167,11 +167,15 @@ header {
                 display: flex;
 
                 li {
-                    padding: 1rem 2rem;
+                    display: flex;
                     border-bottom: 4px solid var(--white);
                     /* optional transition effect (default 0.125s) */
                     -webkit-transition: all .125s ease-in-out;
                     transition: all .125s ease-in-out;
+
+                    a{
+                        padding: 1rem 2rem;
+                    }
 
                     &.active {
                         border-bottom: 4px solid var(--green);
@@ -327,7 +331,7 @@ footer {
                 }
                 &:hover{
                     img{
-                        transform: scale(1.5);
+                        transform: scale(1.1);
                     }
                 }
             }
