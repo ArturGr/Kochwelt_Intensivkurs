@@ -392,23 +392,23 @@ footer {
     }
 }
 
-/* Rezept Artur */
-/*** Wird das noch benötigt? ***/
+/* Contact Site - Footer */
 .logoFooterKontakt {
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 1rem;
 
     a {
         img {
-            width: 40px;
+            width: auto;
             height: 40px;
             border-radius: 0%;
         }
     }
 }
 
-.ulArtur {
+/* Rezept Artur list-elements */
+.ulArtur{
     margin-left: 16px;
     list-style-type: disc;
 }
@@ -714,4 +714,12 @@ section {
             display: none;
         }
     }
+
+    
+    #contact{
+        .content{
+            justify-content: center;
+        }
+    }
+
 }
