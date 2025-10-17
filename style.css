@@ -183,6 +183,7 @@ header {
                         a {
                             color: var(--green);
                             font-weight: bold;
+                            width: 100%;
                         }
 
                         &:hover {
@@ -278,6 +279,7 @@ footer {
                 border: 0;
                 color: var(--white);
                 background-color: var(--green);
+                cursor: pointer;
 
                 &:hover {
                     background-color: var(--green-darker);
@@ -322,13 +324,12 @@ footer {
                 display: block;
                 overflow: hidden;
                 border-radius: 1rem;
-                transition: box-shadow 0.25s ease-in-out;
-
+                transition: box-shadow 0.125s ease-in-out;
                 img {
                     width: 100%;
                     height: 300px;
                     object-fit: cover;
-                    transition: transform 0.5s ease;
+                    transition: transform 0.125s ease;
                 }
 
                 &:hover {
@@ -532,9 +533,15 @@ footer {
             cursor: pointer;
             height: 36px;
             width: 110px;
-            background-color: #008001;
-            color: #ffffff;
+            background-color: var(--green);
+            color: var(--white);
             border: none;
+            -webkit-transition: all .125s ease-in-out;
+            transition: all .125s ease-in-out;
+
+            &:hover{
+                background-color: var(--green-darker);
+            }
         }
 
         table {
