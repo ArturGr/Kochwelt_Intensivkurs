@@ -49,13 +49,13 @@
             <div class="wrapper">
                 <div class="content">
                     <h2>Kontakt Formular</h2>
-                    <form action="./send_mail.html" method="post">
+                    <form onsubmit="sendMail(event)">
                         <label for="name">Dein Name: </label>
                         <input type="text" required name="name" id="dein_name">
                         <label for="E-Mail">Deine E-Mail: </label>
-                        <input type="email" required name="E-Mail" id="deine_email">
+                        <input type="email" required name="email" id="deine_email">
                         <label for="nachricht">Deine Nachricht: </label>
-                        <textarea  rows="5" cols="20" required name="nachricht" id="deine_nachricht"></textarea>
+                        <textarea rows="5" cols="20" required name="nachricht" id="deine_nachricht"></textarea>
                         <button type="submit">Abschicken</button>
                     </form>
                 </div>
