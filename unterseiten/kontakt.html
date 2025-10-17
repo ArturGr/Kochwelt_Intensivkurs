@@ -12,7 +12,7 @@
     <header>
         <div class="wrapper">
             <div id="logo">
-                <a href="../index.html"><img src="../img/logo.png" alt="Kochwelt Logo TEST"></a>
+                <a href="../index.html"><img src="../img/logo.png" alt="Kochwelt Logo"></a>
             </div>
             <nav>
                 <ul id="mainMenu">
@@ -49,7 +49,7 @@
             <div class="wrapper">
                 <div class="content">
                     <h2>Kontakt Formular</h2>
-                    <form action="./send_mail.html" method="post">
+                    <form onsubmit="sendMail(event)">
                         <label for="name">Dein Name: </label>
                         <input type="text" required name="name" id="dein_name">
                         <label for="E-Mail">Deine E-Mail: </label>
