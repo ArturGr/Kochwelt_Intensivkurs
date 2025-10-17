@@ -10,7 +10,7 @@ function toggleMenu(){
     });
 }
 
-/* Function to send email via contct-form */
+/* Function to send email via contact-form */
 function sendMail(event){
     event.preventDefault();
     const data = new FormData(event.target);
@@ -37,11 +37,9 @@ function menuCalc(){
     console.log(portions, amount);
 };
 
-
-
 /* Call different functions after DOM was loaded */
 document.addEventListener("DOMContentLoaded", () => {
     // toggle responsive Menu
     toggleMenu();
-    menuCalc();
+    //menuCalc();
 });
