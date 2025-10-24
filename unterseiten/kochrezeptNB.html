@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../style.css">
     <script src="../script.js"></script>
     <link rel="icon" type="image/x-icon" href="../img/logo_small.png">
+    
 </head>
 
 <body>
@@ -62,8 +63,8 @@
                     <form>
                         <label class="portions_label" for="portions">Zutaten für</label>
                         <span>
-                            <input id="portions" type="number" min="1" max="12" value="1" required>
-                            <button class="portions">Portionen</button>
+                            <input id="portions" type="number" min="1" max="12" step="1" placeholder="1" required>
+                            <button type="button" class="portions" onclick="calculate()">Portionen</button>
                         </span>
                     </form>
                     <table>
@@ -72,47 +73,47 @@
                                 <th class="use_for" colspan="2">Für die Pasta</th>
                             </tr>
                             <tr>
-                                <td class="amount"><span>100</span> g</td>
+                                <td class="amount"><span class="amount_value">100</span> g</td>
                                 <td>Spaghetti</td>
                             </tr>
                             <tr>
-                                <td class="amount"><span>100</span> g</td>
+                                <td class="amount"><span class="amount_value">100</span> g</td>
                                 <td>Blattspinat</td>
                             </tr>
                             <tr>
-                                <td class="amount"><span>75</span> g</td>
+                                <td class="amount"><span class="amount_value">75</span> g</td>
                                 <td>Garnelen</td>
                             </tr>
                             <tr>
-                                <td class="amount"><span>75</span> ml</td>
+                                <td class="amount"><span class="amount_value">75</span> ml</td>
                                 <td>Sahne</td>
                             </tr>
                             <tr>
-                                <td class="amount"><span>25</span> g</td>
+                                <td class="amount"><span class="amount_value">25</span> g</td>
                                 <td>Frischkäse</td>
                             </tr>
                             <tr>
-                                <td class="amount"><span>15</span> g</td>
+                                <td class="amount"><span class="amount_value">15</span> g</td>
                                 <td>Parmesan</td>
                             </tr>
                             <tr>
-                                <td class="amount"><span>50</span> g</td>
+                                <td class="amount"><span class="amount_value">50</span> g</td>
                                 <td>Cherrytomaten</td>
                             </tr>
                             <tr>
-                                <td class="amount"><span>0.5</span></td>
+                                <td class="amount"><span class="amount_value">0.5</span></td>
                                 <td>Schalotte(n)</td>
                             </tr>
                             <tr>
-                                <td class="amount"><span>0.5</span></td>
+                                <td class="amount"><span class="amount_value">0.5</span></td>
                                 <td>Knoblauchzehe(n)</td>
                             </tr>
                             <tr>
-                                <td class="amount"><span>0.5</span> EL</td>
+                                <td class="amount"><span class="amount_value">1</span> EL</td>
                                 <td>Zitronensaft</td>
                             </tr>
                             <tr>
-                                <td class="amount"><span>1</span> EL</td>
+                                <td class="amount"><span class="amount_value">1</span> EL</td>
                                 <td>Olivenöl</td>
                             </tr>
                             <tr>
@@ -124,11 +125,11 @@
                                 <th class="use_for" colspan="2">Optionale Toppings</th>
                             </tr>
                             <tr>
-                                <td class="amount"><span>25</span> g</td>
+                                <td class="amount"><span class="amount_value">25</span> g</td>
                                 <td>Pinienkerne geröstet</td>
                             </tr>
                             <tr>
-                                <td class="amount"><span>1</span></td>
+                                <td class="amount"><span class="amount_value">1</span></td>
                                 <td>handvoll Basilikum</td>
                             </tr>
 
@@ -193,6 +194,6 @@
             </div>
         </div>
     </footer>
+    <script src="../calculatorNB.js"></script>
 </body>
-
 </html>
